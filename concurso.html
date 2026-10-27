@@ -69,39 +69,93 @@
                  font-size: 18px;
                  display: block;
                  margin: 0 auto;">
-    Começar desafio!
+    Começar o desafio!
   </button>
 
 </section>
 
-  <!-- Aqui seria o menu das matérias que devem ser escolhidas 
 
 
 
 <section id="subject-screen" class="canva-card card bg-white" style="background: white;" hidden>
   <div class="scene" aria-hidden="true">
-    <span class="scene-art">📚 🔢 🌎 🔬</span>
   </div>
 
   <div class="p-6 sm:p-10 text-center">
-    <div class="explorer" aria-hidden="true">🧒🏽🎒</div>
 
-    <h1 class="display mt-4 mb-4" style="font-size: 32px;">Clube Explorador!</h1>
-
-    <p class="mb-7 leading-relaxed">
-      Escolha uma matéria e prepare-se para aprender brincando!
+   <p class="mb-7 leading-relaxed" 
+      style="font-size: 40px;
+      border-radius: 20%;
+      color:darkblue">
+    Escolha uma matéria!
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <button type="button" class="action" style="background: #ffe6c9;" data-materia="portugues">📚 Português</button>
-      <button type="button" class="action" style="background: #dceaff;" data-materia="matematica">🔢 Matemática</button>
-      <button type="button" class="action" style="background: #d8f5df;" data-materia="geografia">🌎 Geografia</button>
-      <button type="button" class="action" style="background: #f5e0ff;" data-materia="ciencias">🔬 Ciências</button>
+     
+      <button data-materia="portugues"
+          data-template-id="start-button"
+          type="button"
+          class="canva-button primary min-h-16 w-full max-w-xs px-7 py-3 font-bold"
+          style="background: rgb(255, 212, 90);
+                 color: rgb(25, 51, 75);
+                 font-weight: 700;
+                 font-style: normal;
+                 font-size: 18px;
+                 display: block;
+                 margin: 0 auto;"
+                 data-materia="portugues";> 
+        > Português</button>
+
+        <button data-materia="matematica"
+          data-template-id="start-button"
+          type="button"
+          class="canva-button primary min-h-16 w-full max-w-xs px-7 py-3 font-bold"
+          style="background: rgb(255, 90, 104);
+                 color: rgb(25, 51, 75);
+                 font-weight: 700;
+                 font-style: normal;
+                 font-size: 18px;
+                 display: block;
+                 margin: 0 auto;"
+                 data-materia="matematica";> 
+        > Matemática</button>
+
+
+        <button data-materia="Direito_Constitucional"
+          data-template-id="start-button"
+          type="button"
+          class="canva-button primary min-h-16 w-full max-w-xs px-7 py-3 font-bold"
+          style="background: rgb(212, 241, 45);
+                 color: rgb(25, 51, 75);
+                 font-weight: 700;
+                 font-style: normal;
+                 font-size: 18px;
+                 display: block;
+                 margin: 0 auto;"
+                 data-materia="Direito_Constitucional";> 
+        > Direito Constitucional</button>
+
+
+          <button data-materia="Direito_Administrativo"
+          data-template-id="start-button"
+          type="button"
+          class="canva-button primary min-h-16 w-full max-w-xs px-7 py-3 font-bold"
+          style="background: rgb(52, 241, 45);
+                 color: rgb(25, 51, 75);
+                 font-weight: 700;
+                 font-style: normal;
+                 font-size: 18px;
+                 display: block;
+                 margin: 0 auto;"
+                 data-materia="DDireito_Administrativo";> 
+        > Direito Administrativo</button>
+
+
     </div>
   </div>
 </section>
 
--->
+
 
 
     <section id="quiz-screen" data-template-id="quiz-card" class="canva-card stage hidden px-5 py-7 sm:px-10 sm:py-9" aria-label="Perguntas do desafio" style="background: rgb(16, 42, 86); color: rgb(255, 255, 255);">
@@ -113,8 +167,6 @@
       <div id="progress-fill" class="h-full rounded-full bg-sky-500 transition-all duration-300" style="width:10%"></div>
      </div>
      <div id="questions">
-    <script src="js/questoes.js"></script>
-    <script src="js/render-quiz.js"></script>
      </div>
      <div id="feedback" class="hidden mt-6 rounded-2xl px-5 py-4 font-semibold" role="status" aria-live="polite">
       <span data-template-id="correct-feedback" class="canva-text hidden" style="color: rgb(100, 11, 218); font-weight: 600; font-style: normal; font-size: 18px;">Muito bem! Você acertou!</span> <span data-template-id="incorrect-feedback" class="canva-text hidden" style="color: rgb(117, 25, 35); font-weight: 600; font-style: normal; font-size: 18px;">Boa tentativa! A resposta certa está marcada em verde. 💡</span>
@@ -132,6 +184,8 @@
 
    </main>
   </div>
-  <script src="js/matematica.js"></script>
- 
+  <script src="js/questoes.js"></script>
+  <script src="js/render-quiz.js"></script>
+  <script src="js/menumaterias.js"></script>
+  
 </body></html>

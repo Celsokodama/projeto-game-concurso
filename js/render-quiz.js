@@ -103,7 +103,3 @@ function nextQuestion(root) {
   current.classList.add("hidden");
   if (questions[idx + 1]) questions[idx + 1].classList.remove("hidden");
 }
-
-
-
-renderQuiz(quizData, "#questions");
