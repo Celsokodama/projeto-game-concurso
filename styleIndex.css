@@ -47,10 +47,7 @@
   
    
     .scene { position:relative; min-height:20px; display:flex; align-items:center; justify-content:center; overflow:hidden; border-bottom:3px solid var(--ink); background:linear-gradient(145deg,#2234da,#e0fbff); }
-    /*
-    .scene:before { content:""; position:absolute; width:115px; height:115px; border-radius:50%; background:#ffdf68; top:-45px; right:12%; }
-    .scene:after { content:""; position:absolute; width:130%; height:55px; border-radius:50% 50% 0 0; background:#61bf86; bottom:-26px; }
- */
+ 
     .scene-art { position:relative; z-index:1; font-size:26px; filter:drop-shadow(3px 5px 0 #142e4533); letter-spacing:8px; }
     .explorer { font-size:75px; line-height:1; filter:drop-shadow(4px 5px 0 #142e4533); }
     .answer-box { border:2px solid var(--ink); border-radius:18px; padding:17px; }
@@ -68,26 +65,29 @@
   .screen.active { display: block; }
 
 
-    .canva-button.choice {
+  .canva-button.choice {
   padding: 12px 16px;
   border-radius: 10px;
-  border: 2px solid #444;
+  border: 3px solid #444;
   background: #1f2937;
-  color: #33159c;
+  color: #000000;
   cursor: pointer;
-  transition: transform .15s, background .15s, border-color .15s;
+  transition: transform .2s, background .2s, border-color .2s;
 }
 .canva-button.choice:hover {
-  transform: translateY(-2px);
-  border-color: #6366f1;
+  transform: translateY(-5px);
+  border: 3 px solid;
+  border-color: #6bc080;
 }
 .canva-button.choice.correct {
   background: #16a34a;
   border-color: #16a34a;
+  border: 3px solid;
 }
 .canva-button.choice.wrong {
   background: #dc2626;
   border-color: #dc2626;
+  border: 3px solid;
 }
 .question.hidden { display: none; }
 

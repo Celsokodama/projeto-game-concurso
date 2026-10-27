@@ -40,6 +40,7 @@
     }
 
     function startGame() {
+      questions = [...document.querySelectorAll('#questions .question')];
       current = 0;
       score = 0;
       answered = false;
@@ -75,9 +76,10 @@
         });
       });
     });
-
+    /*
     document.getElementById('start-button').addEventListener('click', startGame);
     document.getElementById('restart-button').addEventListener('click', startGame);
+    */
     nextButton.addEventListener('click', () => {
       if (!answered) return;
       if (current < questions.length - 1) {

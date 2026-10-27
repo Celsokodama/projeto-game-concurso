@@ -11,6 +11,26 @@ function renderQuiz(quizData, container) {
     return;
   }
 
+    function iniciarQuiz() {
+  questions = [...document.querySelectorAll('#questions .question')];
+  current = 0;
+  score = 0;
+  answered = false;
+
+  // limpa estados visuais
+  questions.forEach(question => {
+    question.querySelectorAll('.choice').forEach(button => {
+      button.disabled = false;
+      button.classList.remove('correct', 'incorrect');
+      button.removeAttribute('aria-label');
+    });
+  });
+
+  showScreen('quiz');
+  showQuestion();
+}
+window.iniciarQuiz = iniciarQuiz;
+
   // Limpa o container antes de renderizar
   root.innerHTML = "";
 
@@ -103,3 +123,4 @@ function nextQuestion(root) {
   current.classList.add("hidden");
   if (questions[idx + 1]) questions[idx + 1].classList.remove("hidden");
 }
+
