@@ -85,7 +85,30 @@ function startGame() {
 
 window.iniciarQuiz = startGame;
 
-/* ---------- Delegação de evento (única fonte de clique) ---------- */
+
+/* ---------- Botão Próxima ---------- */
+nextButton.addEventListener("click", () => {
+  if (!answered) return;
+
+  if (current < questions.length - 1) {
+    current++;
+    showQuestion();
+  } else {
+    document.getElementById("final-score").textContent =
+      `Você acertou ${score} de ${questions.length} perguntas!`;
+    showScreen("end");
+    document.getElementById("restart-button").focus();
+  }
+});
+
+/* ---------- Reiniciar ---------- */
+document
+  .getElementById("restart-button")
+  .addEventListener("click", startGame);
+
+
+
+  /* ---------- Delegação de evento (única fonte de clique) ---------- */
 document.getElementById("questions").addEventListener("click", (event) => {
   const button = event.target.closest(".choice");
   if (!button) return;
@@ -110,36 +133,25 @@ document.getElementById("questions").addEventListener("click", (event) => {
       option.classList.add("incorrect");
   });
 
+  // 🔑 Calcula a letra da alternativa correta (A, B, C, D, E...)
+  const letraCorreta = String.fromCharCode(65 + correctIndex); // 0→A, 1→B, 2→C...
+
+  // 🔑 Preenche o texto do feedback de erro com a letra
+  const incorrectFeedback = feedback.querySelector(
+    '[data-template-id="incorrect-feedback"]'
+  );
+  incorrectFeedback.textContent =
+    `Boa tentativa! A resposta correta é a alternativa ${letraCorreta}. 💡`;
+
+  // Mostra/esconde os feedbacks
   feedback.classList.remove("hidden", "bg-green-100", "bg-red-100");
   feedback.classList.add(isCorrect ? "bg-green-100" : "bg-red-100");
   feedback
     .querySelector('[data-template-id="correct-feedback"]')
     .classList.toggle("hidden", !isCorrect);
-  feedback
-    .querySelector('[data-template-id="incorrect-feedback"]')
-    .classList.toggle("hidden", isCorrect);
+  incorrectFeedback.classList.toggle("hidden", isCorrect);
 
   nextButton.classList.remove("hidden");
   updateStatus();
   nextButton.focus();
 });
-
-/* ---------- Botão Próxima ---------- */
-nextButton.addEventListener("click", () => {
-  if (!answered) return;
-
-  if (current < questions.length - 1) {
-    current++;
-    showQuestion();
-  } else {
-    document.getElementById("final-score").textContent =
-      `Você acertou ${score} de ${questions.length} perguntas!`;
-    showScreen("end");
-    document.getElementById("restart-button").focus();
-  }
-});
-
-/* ---------- Reiniciar ---------- */
-document
-  .getElementById("restart-button")
-  .addEventListener("click", startGame);
