@@ -13,15 +13,29 @@ const nextButton = document.getElementById("next-button");
 const feedback = document.getElementById("feedback");
 
 function showScreen(name) {
-  Object.entries(screens).forEach(([key, screen]) => {
-    if (screen) screen.classList.toggle("hidden", key !== name);
+  const screensMap = {
+    start: document.getElementById("start-screen"),
+    quiz: document.getElementById("quiz-screen"),
+    end: document.getElementById("end-screen")
+  };
+  
+  Object.entries(screensMap).forEach(([key, screen]) => {
+    if (screen) {
+      if (key === name) {
+        screen.classList.remove("hidden");
+        screen.hidden = false;
+      } else {
+        screen.classList.add("hidden");
+        screen.hidden = true;
+      }
+    }
   });
-  const s = screens[name];
+  
+  const s = screensMap[name];
   if (!s) return;
   s.classList.remove("reveal");
   void s.offsetWidth;
   s.classList.add("reveal");
-  
 }
 
 function updateStatus() {
@@ -73,6 +87,7 @@ function startGame() {
 
   questions.forEach((question) => {
     question.classList.remove("answered");
+    question.classList.add("hidden"); // Esconde todas no começo
     question.querySelectorAll(".choice").forEach((button) => {
       button.disabled = false;
       button.classList.remove("correct", "incorrect", "wrong");
@@ -80,9 +95,20 @@ function startGame() {
     });
   });
 
-  showScreen("quiz");
+  // Esconde o feedback e o botão de próxima
+  const feedbackElement = document.getElementById("feedback");
+  if (feedbackElement) feedbackElement.classList.add("hidden");
+  
+  const nextBtn = document.getElementById("next-button");
+  if (nextBtn) nextBtn.classList.add("hidden");
+
+  // Mostra a tela do quiz (forçando o display)
+  document.getElementById("quiz-screen").classList.remove("hidden");
+  document.getElementById("quiz-screen").hidden = false;
+
   showQuestion();
 }
+
 
 window.iniciarQuiz = startGame;
 
@@ -94,19 +120,26 @@ nextButton.addEventListener("click", () => {
   if (current < questions.length - 1) {
     current++;
     showQuestion();
-  } else {
+ } else {
+    // Fim do quiz
     document.getElementById("final-score").textContent =
       `Você acertou ${score} de ${questions.length} perguntas!`;
+      
+    // NOVO: Limpa a tela do quiz para a próxima rodada
+    document.getElementById("questions").innerHTML = "";
+    feedback.classList.add("hidden");
+    nextButton.classList.add("hidden");
+    
     showScreen("end");
     document.getElementById("restart-button").focus();
   }
 });
 
-/* ---------- Reiniciar ---------- */
+/* ---------- Reiniciar ---------- 
 document
-  .getElementById("restart-button")
+  .getElementById("restart-button") 
   .addEventListener("click", startGame);
-
+*/
 
 
   /* ---------- Delegação de evento (única fonte de clique) ---------- */
