@@ -35,6 +35,11 @@ function renderQuiz(quizData, container) {
     grid.className = "grid sm:grid-cols-2 gap-3";
 
     q.options.forEach((opt) => {
+
+       // Ignora alternativas vazias
+      if (!opt.text || opt.text.trim() === "") {
+          return;
+      }
       const button = document.createElement("button");
       button.className = "canva-button choice";
       button.type = "button";

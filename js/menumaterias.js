@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const nomesMateria = {
     portugues: "Português",
-    matematica: "Matemática",
+    Matemática: "Matemática",
     Direito_Constitucional: "Direito Constitucional",
     Direito_Administrativo: "Direito Administrativo"
   };

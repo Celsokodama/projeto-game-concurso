@@ -21,6 +21,7 @@ function showScreen(name) {
   s.classList.remove("reveal");
   void s.offsetWidth;
   s.classList.add("reveal");
+  
 }
 
 function updateStatus() {
@@ -44,7 +45,7 @@ function showQuestion() {
     question.classList.toggle("hidden", index !== current);
     question.classList.toggle("reveal", index === current);
   });
-
+  
   answered = false;
   feedback.classList.add("hidden");
   nextButton.classList.add("hidden");
