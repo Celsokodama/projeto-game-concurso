@@ -197,6 +197,132 @@
         { "id": "q11-d", "text": "d) ambas as proposições simples que a compõem sejam verdadeiras" },
         { "id": "q11-e", "text": "" }
       ]
+    },
+    {
+      "id": "q12",
+      "banca": "VUNESP",
+      "ano": "2026",
+      "dificuldade": "Média",
+      "art": "Direito Administrativo - Ato Administrativo - VUNESP - 2026",
+      "materia": "Direito Administrativo",
+      "assunto": "Ato Administrativo",
+      "title": "Considere que o auditor fiscal X lavrou auto de infração e constituiu crédito tributário relativo ao Imposto Sobre Serviços de Qualquer Natureza (ISSQN), incidente sobre serviços de veiculação de publicidade prestados, de forma remunerada, por empresa que não submeteu, à tributação municipal, as receitas decorrentes dessa atividade. Considere, ainda, que o lançamento tributário constitui ato vinculado.\nCom base na situação hipotética e na teoria dos atos administrativos, é correto afirmar:",
+      "answer": 1,
+      "options": [
+        { "id": "q12-a", "text": "a) o ato é realizado a partir de um juízo de conveniência e oportunidade do auditor fiscal" },
+        { "id": "q12-b", "text": "b) a exposição das razões de fato e de direito, que levaram à constituição de crédito, corresponde à motivação do ato." },
+        { "id": "q12-c", "text": "c) o ato em questão pode ser revogado pela autoridade lançadora, a partir da constatação de que ele não atende o interesse público." },
+        { "id": "q12-d", "text": "d) o ato, por ser vinculado, somente pode ser anulado pelo Poder Judiciário." },
+        { "id": "q12-e", "text": "e) na condição de ato administrativo, o lançamento goza da presunção absoluta de veracidade e legitimidade." }
+      ]
+    },
+    {
+      "id": "q13",
+      "banca": "VUNESP",
+      "ano": "2026",
+      "dificuldade": "Difícil",
+      "art": "Direito Administrativo - Contrato Administrativo - VUNESP - 2026",
+      "materia": "Direito Administrativo",
+      "assunto": "Contrato Administrativo",
+      "title": "Um auditor fiscal municipal, responsável pela fiscalização do ISSQN, foi incumbido de verificar o preenchimento dos requisitos necessários ao reconhecimento de imunidade tributária pretendida pela Associação X. Durante o procedimento, o dirigente da entidade ofereceu ao auditor o custeio integral de uma viagem de férias para sua irmã, condicionando a vantagem à omissão de determinadas diligências fiscais que poderiam comprometer o reconhecimento da imunidade. O auditor, ciente da finalidade da oferta, concordou com o ajuste e deixou deliberadamente de realizar as diligências.\nConsiderando a situação hipotética e o disposto na Lei nº 8.429/92, é correto afirmar que",
+      "answer": 3,
+      "options": [
+        { "id": "q13-a", "text": "a) o auditor não praticou ato de improbidade administrativa, pois não obteve vantagem econômica para si, mas para terceiro." },
+        { "id": "q13-b", "text": "b) os agentes responsáveis pela prática de atos, pela Associação, não respondem por improbidade administrativa, pois não se enquadram no conceito de agente público." },
+        { "id": "q13-c", "text": "c) o auditor fiscal praticou ato enquadrado, na Lei, como ofensivo aos princípios da Administração Pública, ficando sujeito à suspensão dos direitos políticos por até doze anos." },
+        { "id": "q13-d", "text": "d) pode fiscalizar e aplicar sanções contra os ordenadores de despesa, caso constate irregularidades, hipótese em que a decisão terá a natureza de título" },
+        { "id": "q13-e", "text": "e) a conduta se enquadraria como improbidade administrativa, ainda que praticada a título culposo, e as penalidades não podem ser objeto de acordo ou transação." }
+      ]
+    },
+    {
+      "id": "q14",
+      "banca": "VUNESP",
+      "ano": "2026",
+      "dificuldade": "Difícil",
+      "art": "Direito Administrativo - Contrato Administrativo - VUNESP - 2026",
+      "materia": "Direito Administrativo",
+      "assunto": "Contrato Administrativo",
+      "title": "A respeito do procedimento licitatório, com base na Lei nº 14.133/21, assinale a alternativa correta.",
+      "answer": 1,
+      "options": [
+        { "id": "q14-a", "text": "a) As licitações devem ser conduzidas por comissão de licitação, composta preferencialmente por servidores públicos estáveis, indicados pela autoridade máxima do respectivo órgão/entidade." },
+        { "id": "q14-b", "text": "b) Salvo vedação devidamente justificada no processo licitatório, pessoa jurídica poderá participar de licitação em consórcio, observadas as condições previstas em lei." },
+        { "id": "q14-c", "text": "c) As licitações serão realizadas preferencialmente sob a forma presencial, admitida a utilização da forma eletrônica, desde que motivada." },
+        { "id": "q14-d", "text": "d) A contratação de serviços de tecnologia e de obras deve ser precedida de projeto básico e de projeto executivo." },
+        { "id": "q14-e", "text": "e) O edital de licitação deverá contemplar matriz de alocação de riscos entre o contratante e o contratado, atribuindo-os à parte que detenha maior capacidade para evitar sua ocorrência." }
+      ]
+    },
+    {
+      "id": "q15",
+      "banca": "VUNESP",
+      "ano": "2026",
+      "dificuldade": "Média",
+      "art": "Direito Constitucional - Teoria da Constituição - VUNESP - 2026",
+      "materia": "Direito Constitucional",
+      "assunto": "Teoria da Constituição",
+      "title": "Considere que o Congresso Nacional esteja discutindo proposta de emenda à Constituição, apresentada por parlamentar, destinada a alterar o sistema constitucional de tributação do consumo, cujas disposições podem afetar a autonomia financeira dos entes federativos e afastar a observância do princípio da anterioridade tributária. Diante da proposta, o Secretário de Fazenda do Município X convoca auditor fiscal municipal para esclarecer dúvidas acerca dos limites materiais impostos ao poder de reforma da Constituição.\nCom base na situação hipotética e na teoria das cláusulas pétreas, é correto afirmar que",
+      "answer": 1,
+      "options": [
+        { "id": "q15-a", "text": "a) o parlamentar tem legitimidade para propor emenda à Constituição, assim como o Presidente do Congresso Nacional e um terço dos governadores dos Estados." },
+        { "id": "q15-b", "text": "b) a emenda será constitucional na parte em que afeta a autonomia financeira, caso considerado que não é tendente a abolir a forma federativa de Estado." },
+        { "id": "q15-c", "text": "c) o princípio da anterioridade não integra o conjunto de cláusulas pétreas, pois a proteção constitucional se limita aos direitos e garantias individuais previstos no art. 5º da Constituição Federal." },
+        { "id": "q15-d", "text": "d) a emenda constitucional é válida, pois a forma federativa de Estado não integra o conjunto de cláusulas pétreas." },
+        { "id": "q15-e", "text": "e) a proposta de emenda constitucional corresponde a uma manifestação do poder constituinte originário, motivo pelo qual não se sujeita a limitações." }
+      ]
+    },
+    {
+      "id": "q16",
+      "banca": "VUNESP",
+      "ano": "2026",
+      "dificuldade": "Média",
+      "art": "Direito Constitucional - Teoria da Constituição - VUNESP - 2026",
+      "materia": "Direito Constitucional",
+      "assunto": "Teoria da Constituição",
+      "title": "A Constituição deve ser considerada como um todo uno, indivisível e harmônico e, dessa forma, interpretada. Por isso, cabe ao intérprete analisar a Constituição como um sistema em que todas as normas estão interligadas, buscando compatibilizar o seu conteúdo e evitar conflitos entre elas.\nA ideia exposta no enunciado está diretamente relacionada ao princípio de interpretação constitucional da",
+      "answer": 0,
+      "options": [
+        { "id": "q16-a", "text": "a) unidade da Constituição." },
+        { "id": "q16-b", "text": "b) máxima efetividade." },
+        { "id": "q16-c", "text": "c) concordância prática." },
+        { "id": "q16-d", "text": "d) conformidade funcional." },
+        { "id": "q16-e", "text": "e) força normativa da Constituição." }
+      ]
+    },
+    {
+      "id": "q17",
+      "banca": "VUNESP",
+      "ano": "2026",
+      "dificuldade": "Muito Difícil",
+      "art": "Matemática - Geometria Plana - VUNESP - 2026",
+      "materia": "Matemática",
+      "assunto": "Geometria Plana",
+      "title": "Um ângulo com medida de 34º12’ foi dividido em 3 partes iguais. Cada parte ficou com medida igual a:",
+      "answer": 3,
+      "options": [
+        { "id": "q17-a", "text": "a) 11º67’" },
+        { "id": "q17-b", "text": "b) 11º44’" },
+        { "id": "q17-c", "text": "c) 11º37’" },
+        { "id": "q17-d", "text": "d) 11º24’" },
+        { "id": "q17-e", "text": "e) 11º04’" }
+      ]
+    },
+    {
+      "id": "q18",
+      "banca": "VUNESP",
+      "ano": "2026",
+      "dificuldade": "",
+      "art": "Controle Externo - Normas - VUNESP - 2026",
+      "materia": "Controle Externo",
+      "assunto": "Normas",
+      "title": "A Secretaria Municipal de Fazenda do Município X está passando por auditoria realizada pelo Tribunal de Contas do Estado, destinada a avaliar as rotinas adotadas pelas equipes de fiscalização tributária em diligências externas, incluindo a forma de comprovação das despesas realizadas, a economicidade dos gastos e a eficiência das diligências. Como é a primeira vez que a Secretaria é submetida a procedimento dessa natureza, Fábio questiona Mariana, fiscal tributária recém-empossada, acerca da competência do Tribunal de Contas para realizar esse tipo de fiscalização.\nCom base na situação hipotética e no disposto na Constituição Federal, Mariana poderá afirmar corretamente que o Tribunal de Contas do Estado",
+      "answer": 2,
+      "options": [
+        { "id": "q18-a", "text": "a) auxilia a Câmara Municipal no controle externo da Administração, mas não pode aplicar sanções diretamente aos servidores públicos municipais." },
+        { "id": "q18-b", "text": "b) não tem competência para realizar a diligência, pois os municípios somente se sujeitam à fiscalização da Câmara Municipal." },
+        { "id": "q18-c", "text": "c) pode avaliar a validade da conduta dos agentes públicos não apenas com base na legalidade dos atos administrativos, mas também da legitimidade e da economicidade." },
+        { "id": "q18-d", "text": "d) pode fiscalizar e aplicar sanções contra os ordenadores de despesa, caso constate irregularidades, hipótese em que a decisão terá a natureza de título executivo judicial." },
+        { "id": "q18-e", "text": "e) pode realizar a fiscalização, mas o município pode, no futuro, criar o seu próprio Tribunal de Contas." }
+      ]
     }
   ]
 };
